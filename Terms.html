@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #575761;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        #container {
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            background-color: #333;
+            border-radius: 8px;
+            text-align: justify;
+        }
+
+        h1 {
+            color: #3498db;
+            text-align: center;
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .menu-icon {
+            font-size: 30px;
+            cursor: pointer;
+            position: fixed;
+            left: 20px;
+            top: 20px;
+            z-index: 2;
+            color: #fff;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #2c2b2a;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <i class="fas fa-bars menu-icon" onclick="openNav()"></i>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Terms.html">Terms</a>
+    </div>
+
+    <!-- Page content -->
+    <div id="main">
+        <div id="container">
+
+            <h1>Terms and Conditions</h1>
+
+            <p>Please read these terms and conditions carefully before using our app.</p>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing or using the app, you agree to be bound by these terms and conditions.</p>
+
+            <h2>2. Use of the App</h2>
+            <p>This app is provided for personal use only. You may modify the app, but you are not allowed to use it for commercial purposes, including in-app purchases or selling the app.</p>
+
+            <h2>3. Changes to Terms</h2>
+            <p>We reserve the right to modify these terms at any time. Please review these terms periodically for changes.</p>
+
+            <h2>4. Disclaimer</h2>
+            <p>The app is provided "as is" without any warranties. We are not responsible for any damage or loss caused by the use of the app.</p>
+
+            <h2>5. Contact Information</h2>
+            <p>If you have any questions about these terms, please contact us at this <a href="Contact.html">page</a>.</p>
+
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.querySelector('.sidebar').style.width = '250px';
+            document.querySelector('#main').style.marginLeft = '250px';
+        }
+
+        function closeNav() {
+            document.querySelector('.sidebar').style.width = '0';
+            document.querySelector('#main').style.marginLeft = '0';
+        }
+    </script>
+</body>
+</html>
