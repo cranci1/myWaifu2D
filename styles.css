@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #575761;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ecf0f1;
+}
+
+section {
+    padding: 80px 0;
+}
+
+#features, #screenshots, #download {
+    background-color: #202020;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px;
+}
+
+h2 {
+    color: #3498db;
+}
+
+h3 {
+    color: #41a4e7;
+}
+
+p {
+    color: #ffffff;
+}
+
+.feature-list, .screenshot-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature img {
+    width: 250px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+.screenshot-list img {
+    width: 250px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.download-button img {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+}
