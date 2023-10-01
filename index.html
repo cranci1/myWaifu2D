@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myWaifu2D</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
  <meta name="description" content="Get myWaifu2D now and start your 2D adventure!" />
   <meta property="og:title" content="myWaifu2D" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="Get myWaifu2D now and start your 2D adventure!" />
-  <meta property="og:image" content="images/1024.png" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/cranci1/myWaifu2D/main/images/1024.png" />
   <meta name="twitter:title" content="myWaifu2D" />
   <meta name="twitter:description" content="Get myWaifu2D now and start your 2D adventure!" />
-  <meta name="twitter:image" content="images/1024.png" />
-
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/cranci1/myWaifu2D/main/images/1024.png" />
 </head>
 <body>  
+
+<i class="fas fa-bars menu-icon" onclick="openNav()"></i>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Terms.html">Terms</a>
+    </div>
+
+
+
     <div class="container">
         <header>
             <h1>myWaifu2D</h1>
@@ -83,5 +96,19 @@
             <p>&copy; 2023 myWaifu2D. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function openNav() {
+            document.querySelector('.sidebar').style.width = '250px';
+            document.querySelector('#main').style.marginLeft = '250px';
+        }
+
+        function closeNav() {
+            document.querySelector('.sidebar').style.width = '0';
+            document.querySelector('#main').style.marginLeft = '0';
+        }
+    </script>
+
+
 </body>
 </html>
