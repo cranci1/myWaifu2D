@@ -118,19 +118,51 @@ p {
     border-radius: 10px;
 }
 
-.download-buttons {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.glass-box {
+    background: rgba(255, 255, 255, 0.2); /* Transparent background */
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Optional border */
+    border-radius: 10px;
+    padding: 10px; /* Increase padding for phones */
+    text-align: center;
+    max-width: 80%; /* Adjust the max-width as needed */
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box-shadow for glassy effect */
+    color: #fff;
 }
 
-.download-button {
-    display: inline-block;
-    padding: 15px 30px;
+/* Style for the text inside the glassy box */
+.glass-box-text {
+    font-size: 1rem; /* Smaller font size for phones */
+    line-height: 1.5;
+}
+
+/* Style for the glass-like button */
+.glass-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent background */
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
     color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem; /* Smaller font size for phones */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Optional border */
+    margin: 10px 0; /* Adjust margin for phones */
+}
+
+.glass-button:hover {
+    transform: scale(1.1);
+}
+
+/* Style for the download icon */
+.download-icon {
+    margin-right: 5px;
 }
 
 footer {
@@ -138,12 +170,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-}
-
-.download-button img {
-    width: 64px;
-    height: 64px;
-    margin-right: 10px;
 }
 
 .menu-icon {
