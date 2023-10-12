@@ -12,7 +12,12 @@
         "description": "myWaifu2D is a simple iOS app that allow you to appreciate your waifu/s all in one place.",
         "bundleID": "me.cranci.myWaifu2D",
         "category": "Alpha",
-        "changelog": "- Fixes and Improvements"
+        "changelog": "- Fixes and Improvements",
+        "contact": {
+          "web": "https://cranci.xyz",
+          "twitter": "https://twitter.com/cranci_"
+        }
+
       }
     ]
   }
