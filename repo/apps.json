@@ -1,0 +1,40 @@
+{
+    "name": "cranci's repo",
+    "identifier": "me.cranci.repo",
+    "apps": [
+      {
+        "name": "myWaifu2D",
+        "bundleIdentifier": "me.cranci.myWaifu2D",
+        "developerName": "cranci",
+        "subtitle": "iOS waifu app",
+        "version": "0.9.3",
+        "versionDate": "2023-10-12T14:30:00-07:00",
+        "versionDescription": "Fixes and Improvements",
+        "downloadURL": "https://github.com/cranci1/waifu2D/raw/main/ipa/waifu2D.ipa",
+        "localizedDescription": "myWaifu2D is a simple iOS app that allow you to appreciate your waifu/s all in one place.",
+        "iconURL": "https://raw.githubusercontent.com/cranci1/waifu2D/main/waifu2D/Assets.xcassets/AppIcon.appiconset/1024.png",
+        "tintColor": "202020",
+        "size": 20132659,
+        "screenshotURLs": [
+        ]
+      } 
+    ],
+  
+    "news": [
+
+                  {
+              "title": "Welcome to cranci's AltStore Repo",
+              "identifier": "Welcome",
+              "caption": "Hi! Welcome to cranci's Repo! My personal repo! | @cranci_ (Twitter/X)",
+              "tintColor": "202020",
+              "url": "https://cranci.xyz",
+              "date": "2023-10-12",
+              "notify": true
+          }
+
+    ],
+    "userInfo": {
+  
+    }
+  }
+  
